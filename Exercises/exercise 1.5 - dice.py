@@ -1,6 +1,5 @@
 import random
 
-
 dice1 = random.randint(1, 6)
 dice2 = random.randint(1, 6)
 dice3 = random.randint(1, 6)
@@ -20,15 +19,15 @@ print('Total', total)
 
 
 
-
-
+#
+#
 # die = []
 # for _ in range(5):
 #     die.append(random.randint(1, 6))
 #
 # print('Thrown', die)
 # print('Total', sum(die))
-#
+
 
 
 

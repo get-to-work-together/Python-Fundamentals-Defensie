@@ -1,6 +1,5 @@
 
-user_input = input('Give a year: ')
-year = int(user_input)
+year = int(input('Give a year: '))
 
 is_leapyear = ((year % 4 == 0) and not (year % 100 == 0)) or (year % 400 == 0)
 
