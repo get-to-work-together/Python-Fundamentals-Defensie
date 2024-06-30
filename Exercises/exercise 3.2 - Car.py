@@ -12,6 +12,9 @@ class Car:
     def drive(self, km):
         self._mileage += km
 
+    def copy(self):
+        return Car(self._make, self._type, self._color, self._mileage)
+
     def __repr__(self):
         return f'Car("{self._make}", "{self._type}", "{self._color}", {self._mileage})'
 
@@ -25,10 +28,22 @@ if __name__ == '__main__':
 
     my_car = Car('Renault', 'Megane', 'metalic brown')
 
+
+    Car.drive(my_car, 200)
     my_car.drive(200)
+
     my_car.drive(40)
 
     print(my_car.get_info())
 
     print(repr(my_car))
     print(str(my_car))
+
+    import copy
+    car2 = copy.deepcopy(my_car)
+
+    car2.drive(1000)
+
+    print(my_car.get_info())
+    print(car2.get_info())
+
