@@ -1,5 +1,0 @@
-regel 1
-regel 2
-regel 3 met een error
-regel 4
-einde
