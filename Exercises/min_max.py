@@ -5,10 +5,10 @@ Written by Peter Anema
 
 History:
 First version 15 september 2021
-Copywrite ASML
 """
 
 import random
+
 
 def min_max(*numbers):
     """Calculate the minimum and maximum number of the arguments in one pass"""
@@ -21,16 +21,13 @@ def min_max(*numbers):
             maximum = number
     return minimum, maximum
 
+
 def min_max_sorted(*numbers):
     """Calculate the minimum and maximum number of the arguments by using the sorted function"""
     sorted_numbers = sorted(numbers)
     minimum = sorted_numbers[0]
     maximum = sorted_numbers[-1]
     return minimum, maximum
-
-def print_min_max(*numbers):
-    print(min_max(*numbers))
-
 
 
 # --------------------------------

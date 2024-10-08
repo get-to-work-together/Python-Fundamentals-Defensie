@@ -12,6 +12,20 @@ import random
 # print('Total', total)
 
 
+
+n = 5
+total = 0
+for i in range(n):
+    dice = random.randint(1, 6)
+    print('Thrown', dice)
+    total += dice
+
+print('Total', total)
+
+
+
+
+
 #   DRY - Don't Repeat Yourself
 
 
@@ -21,20 +35,20 @@ import random
 
 
 
-die = []
-for _ in range(5):
-    die.append(random.randint(1, 6))
-
-print('Thrown', die)
-print('Total', sum(die))
-
-
+# die = []
+# for _ in range(5):
+#     die.append(random.randint(1, 6))
+#
+# print('Thrown', die)
+# print('Total', sum(die))
 
 
-die = [random.randint(1, 6) for _ in range(5)]
 
-print('Thrown', die)
-print('Total', sum(die))
+
+# die = [random.randint(1, 6) for _ in range(5)]
+#
+# print('Thrown', die)
+# print('Total', sum(die))
 
 
 

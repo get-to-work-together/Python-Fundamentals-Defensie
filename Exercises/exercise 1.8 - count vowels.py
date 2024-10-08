@@ -1,13 +1,13 @@
 
-s = input('Geef tekst: ')
+s = input('Geef tekst: ').lower()
 
 print(f'De tekst bevat {len(s)} karakters')
 print(f'De tekst bevat {len(s.replace(" ", ""))} karakters (zonder spaties)')
 
 totaal_aantal_klinkers = 0
 
-for klinker in 'aeiou':
-    n = s.lower().count(klinker)
+for klinker in 'aeiouy':
+    n = s.count(klinker)
     totaal_aantal_klinkers += n
     print(f'De "{klinker}" komt {n} keer voor')
 
