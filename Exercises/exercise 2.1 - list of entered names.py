@@ -4,7 +4,10 @@ while True:
     name = input('Enter a name: ')
 
     if name:
-        names.append(name)
+        if name in names:
+            print('Name is already in the list')
+        else:
+            names.append(name)
     else:
         break
 

@@ -1,6 +1,6 @@
 import random
 
-required_length = random.randint(8, 20)
+required_length = random.randint(8, 12)
 
 n_lowercase = 2
 n_uppercase = 2
