@@ -8,7 +8,11 @@ print('Guess a number between 1 and 100')
 number_of_guesses = 0
 while True:
 
-    prompt = 'What is your guess? ' if number_of_guesses == 0 else 'What is your next guess? '
+    if number_of_guesses == 0:
+        prompt = 'What is your guess? '
+    else:
+        prompt = 'What is your next guess? '
+
     guess = int(input(prompt))
 
     number_of_guesses += 1

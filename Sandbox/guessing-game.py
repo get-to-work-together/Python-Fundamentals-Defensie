@@ -10,7 +10,7 @@ print('Guess a number between %d and %d' % (lower, upper))
 number_of_guesses = 0
 while True:
 
-    guess = int(input('What is your next guess? '))
+    guess = int(input('What is your (next) guess? '))
 
     number_of_guesses += 1
 
