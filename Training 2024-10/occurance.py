@@ -11,8 +11,7 @@ unique_words = set(words)
 
 d = {}
 for word in sorted(unique_words):
-    n = s.count(word)
-    d[word] = n
+    d[word] = words.count(word)
 
 for word, n in d.items():
     print(f'{word:25}: {n:3}')
