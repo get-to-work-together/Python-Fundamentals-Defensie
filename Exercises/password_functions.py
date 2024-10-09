@@ -25,7 +25,7 @@ def generate_password(required_length = None,
                            uppercase_characters +
                            number_characters +
                            special_characters,
-                           k = required_length - n_lowercase - n_uppercase - n_numbers - n_special)
+                           k = max(0, required_length - n_lowercase - n_uppercase - n_numbers - n_special))
 
     all_characters = lower + upper + numbers + special + extra
 

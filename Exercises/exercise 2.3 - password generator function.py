@@ -7,7 +7,7 @@ def generate_password(required_length = None,
                       n_uppercase = 1,
                       n_numbers = 1,
                       n_special = 1,
-                      invalid_chars = r"""l IO \ ' " """):
+                      invalid_chars = 'l IO \\ \' \"'):
 
     if required_length is None:
         required_length = random.randint(8, 20)
@@ -25,7 +25,7 @@ def generate_password(required_length = None,
                            uppercase_characters +
                            number_characters +
                            special_characters,
-                           k = required_length - n_lowercase - n_uppercase - n_numbers - n_special)
+                           k = max(0, required_length - n_lowercase - n_uppercase - n_numbers - n_special))
 
     all_characters = lower + upper + numbers + special + extra
 
@@ -89,13 +89,13 @@ def wachtwoord_met_invoer():
 
 # -----------------------------------------------------
 
-# print('New password: ', generate_password())
-# print('New password: ', generate_password(required_length = 7))
-# print('New password: ', generate_password(20))
-#
-# print('New password: ', generate_password(required_length = 7, n_uppercase = 5))
+print('New password: ', generate_password())
+print('New password: ', generate_password(required_length = 7))
+print('New password: ', generate_password(20))
 
-print(wachtwoord_met_invoer())
+print('New password: ', generate_password(required_length = 7, n_uppercase = 5))
+
+# print(wachtwoord_met_invoer())
 
 # wachtwoord = input('Geef wachtwoord: ')
 # if check_password(wachtwoord):
