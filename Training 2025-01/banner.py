@@ -17,5 +17,5 @@ def box_banner(s):
 banner('Peter')
 banner('ABRACADABRA')
 banner('ABRACADABRA', '#')
-banner('ABRACADABRA', '$')
+banner('ABRACADABRA', c='$')
 box_banner('Peter')
