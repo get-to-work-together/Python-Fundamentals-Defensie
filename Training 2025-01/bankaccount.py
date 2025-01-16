@@ -16,12 +16,19 @@ class BankAccount:
         print(f'Account {self.accountnr} belongs to {self.holder} and has a balance of € {self.balance}')
 
 
+class SavingsAccount(BankAccount):
+
+    def info(self):
+        print(f'SavingsAccount {self.accountnr} - {self.holder} - balance € {self.balance}')
+
+
+
 # -------------------------------------------------------------------
 
 if __name__ == '__main__':
 
     acc1 = BankAccount('NL99ABCD0864536789', 'Peter')
-    acc2 = BankAccount('NL11DCBA0861111432', 'Lisa', 100)
+    acc2 = SavingsAccount('NL11DCBA0861111432', 'Lisa', 100)
 
     acc1.info()
     acc2.info()

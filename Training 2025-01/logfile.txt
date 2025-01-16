@@ -1,0 +1,28 @@
+CRITICAL:root:BANNNGGGG!!!!
+CRITICAL:root:BANNNGGGG!!!!
+DEBUG:root:Dit is OK
+INFO:root:Hier ben ik
+WARNING:root:Dit gaat bijna fout
+ERROR:root:Fout
+CRITICAL:root:BANNNGGGG!!!!
+CRITICAL:root:BANNNGGGG!!!!
+CRITICAL:root:BANNNGGGG!!!!
+DEBUG:root:Dit is OK
+INFO:root:Hier ben ik
+WARNING:root:Dit gaat bijna fout
+ERROR:root:Fout
+CRITICAL:root:BANNNGGGG!!!!
+CRITICAL:root:BANNNGGGG!!!!
+CRITICAL:root:BANNNGGGG!!!!
+DEBUG:root:Dit is OK
+INFO:root:Hier ben ik
+WARNING:root:Dit gaat bijna fout
+ERROR:root:Fout
+CRITICAL:root:BANNNGGGG!!!!
+2025-01-16T13:50:22.112 - CRITICAL: BANNNGGGG!!!!
+2025-01-16T13:50:22.112 - CRITICAL: BANNNGGGG!!!!
+2025-01-16T13:50:22.112 - DEBUG: Dit is OK
+2025-01-16T13:50:22.112 - INFO: Hier ben ik
+2025-01-16T13:50:22.112 - WARNING: Dit gaat bijna fout
+2025-01-16T13:50:22.112 - ERROR: Fout
+2025-01-16T13:50:22.112 - CRITICAL: BANNNGGGG!!!!

@@ -7,8 +7,11 @@ class Car:
         self.color = color
         self.mileage = mileage
 
+    def __repr__(self):
+        return f'Car("{self.make}")'
+
     def info(self):
-        print(f'This great {self.color} {self.make} {self.model} has driven {self.mileage}km.')
+        return f'This great {self.color} {self.make} {self.model} has driven {self.mileage}km.'
 
     def drive(self, distance: int):
         self.mileage += distance
@@ -20,6 +23,9 @@ if __name__ == '__main__':
 
     car1 = Car('Renault', 'Megane station', 'metalic brown', 485000)
 
-    car1.info()
+    print(car1)
+
+    print(car1.info())
     car1.drive(180)
-    car1.info()
+    print(car1.info())
+
